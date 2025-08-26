@@ -4,7 +4,7 @@ body {
 }
 
 header {
-  background: #0077cc;
+  background: #f6dae8;
   color: white;
   padding: 1px;
   text-align: center;
@@ -50,7 +50,7 @@ header p{
 
 .sidebar a {
   text-decoration: none;
-  color: #0077cc;
+  color: #eaabab;
 }
 
 .sidebar a:hover {
@@ -80,6 +80,6 @@ iframe {
 
 .custom-link:hover,
 .custom-link:active {
-    color: #06559e; /* Same color for hover and active states */
+    color: #e59797; /* Same color for hover and active states */
     text-decoration: none; /* Ensure no underline on hover */
 }
