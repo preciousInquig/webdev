@@ -4,7 +4,7 @@ body {
 }
 
 header {
-  background: #f6dae8;
+  background: #444444;
   color: white;
   padding: 1px;
   text-align: center;
@@ -12,7 +12,7 @@ header {
 
 header p{
   font-size: 0.9em;
-  color: #e0e0e0;  
+  color: #444444;  
 }
 
 .container {
