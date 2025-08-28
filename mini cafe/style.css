@@ -122,3 +122,19 @@ footer {
   margin-top: 40px;
   font-size: 0.9rem;
 }
+
+/* Sakura Petals */
+.petal {
+  position: fixed;
+  top: -30px;
+  background: url('petal.png') no-repeat center/cover;
+  pointer-events: none;
+  animation: fall linear forwards;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(110vh) rotate(360deg);
+    opacity: 0.8;
+  }
+}
