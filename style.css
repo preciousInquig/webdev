@@ -22,10 +22,10 @@ header p{
 
 .sidebar {
   width: 20%;
-  background: #e8b5b5;
+  background: #f4f4f4;
   padding: 15px;
   box-sizing: border-box;
-  border-right: 1px solid #ddd;
+  border-right: 1px solid #ffaaaa;
   overflow-y: auto;
 }
 
