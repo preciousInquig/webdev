@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Courier New', Courier, monospace;
   margin: 0;
 }
 
@@ -22,7 +22,7 @@ header p{
 
 .sidebar {
   width: 20%;
-  background: #f4f4f4;
+  background: #e8b5b5;
   padding: 15px;
   box-sizing: border-box;
   border-right: 1px solid #ddd;
