@@ -1,0 +1,15 @@
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #f8ad9d;
+  color: #333;
+  font-size: 14px;
+}
+
+ul li {
+  margin: 8px 0;
+}
+
+a:hover {
+  color: #e63946; 
+}
