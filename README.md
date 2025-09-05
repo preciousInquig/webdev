@@ -1,5 +1,8 @@
-This repository is created **for school purposes only**.  
-It contains project files (HTML, CSS, and JavaScript) used to practice and demonstrate web development concepts.  
+#WEB DEVELOPMENT LABORATORY MANUAL
 
-# Note
-This project is part of my coursework and is **not intended for commercial use*.
+This repository contains all lab activities for the Web Development course.
+
+Each folder contains one HTML project. View the live Version using Github Pages.
+
+>Created by: Precious Inquig
+>Instructor: Michael Serrano
