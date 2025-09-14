@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pink Flexbox Layout</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff0f5; 
+    }
+
+    .wrapper {
+      background-color: #ffe4e9; 
+      padding: 40px;
+      border-radius: 12px;
+      max-width: 900px;
+      margin: 50px auto;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .box {
+      width: 200px;
+      height: 200px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      padding: 15px;
+    }
+
+    .box img {
+      max-width: 100%;
+      max-height: 160px;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+
+    /* Different colors for each box */
+    .box1 {
+      background-color: #ff99ac; 
+    }
+    .box2 {
+      background-color: #ff6f91;
+    }
+    .box3 {
+      background-color: #ff4d6d;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <div class="box box1">
+        <img src="https://i.pinimg.com/736x/41/84/7c/41847c2c90e0a2a549f058335f609246.jpg" alt="Sample">
+      </div>
+      <div class="box box2">
+        <p>"Stay positive, work hard, dream big."</p>
+      </div>
+      <div class="box box3">
+        <img src="https://i.pinimg.com/1200x/c5/5e/7c/c55e7c54da984e2323cb3e387d8d1e1b.jpg" alt="Sample">
+        <p>Out of sight, Out of mind 🌸</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
