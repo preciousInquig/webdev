@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styles.css">
+</html>
+
+  <header>
+    <h1>CONTACT INFORMATION</h1>
+    <nav>
+      <a href="nav.html">navigation</a>
+    </nav>
+  </header>
+
+    <section id="contact" aria-labelledby="contact-heading" class="container">
+      <h3 id="contact-heading">Contact &amp; Socials</h3>
+
+      <p>Have a question, collaboration, or feedback? Reach out below or connect on social media.</p>
+
+      <!-- Simple contact form (no backend) -->
+      <form id="contact-form" action="#" method="post" aria-label="Contact form">
+        <div>
+          <label for="name">Name</label><br />
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <div>
+          <label for="message">Message</label><br />
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <div>
+          <button type="submit">Send message</button>
+        </div>
+      </form>
+
+      <div id="socials">
+        <h4>Socials</h4>
+        <ul>
+          <li><a href="#" aria-label="Instagram">Instagram</a></li>
+        </ul>
+      </div>
+    </section>
