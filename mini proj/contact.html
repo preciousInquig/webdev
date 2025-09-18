@@ -1,45 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">    
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-    <link rel="stylesheet" href="styles.css">
-</html>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | BloomStudy Hime</title>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fffafc;
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      background: #f6a5b1;
+      color: white;
+      padding: 20px 0;
+      border-bottom: 4px solid #e08699;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    header nav a {
+      color: white;
+      text-decoration: none;
+      margin-top: 10px;
+      display: inline-block;
+      font-weight: bold;
+    }
+
+    section#contact {
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    section#contact h3 {
+      text-align: center;
+      color: #d47c91;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    section#contact p {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #555;
+    }
+
+    form div {
+      margin-bottom: 15px;
+    }
+
+    label {
+      font-weight: bold;
+      color: #444;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 2px solid #f6a5b1;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    button {
+      background: #f6a5b1;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #e08699;
+    }
+
+    #socials {
+      margin-top: 25px;
+      text-align: center;
+    }
+
+    #socials h4 {
+      color: #d47c91;
+      margin-bottom: 10px;
+    }
+
+    #socials ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    #socials ul li {
+      display: inline-block;
+      margin: 0 10px;
+    }
+
+    #socials ul li a {
+      text-decoration: none;
+      color: #f6a5b1;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    #socials ul li a:hover {
+      color: #e08699;
+    }
+  </style>
+</head>
+<body>
 
   <header>
     <h1>CONTACT INFORMATION</h1>
     <nav>
-      <a href="nav.html">navigation</a>
+      <a href="navigation.html">← Back to Navigation</a>
     </nav>
   </header>
 
-    <section id="contact" aria-labelledby="contact-heading" class="container">
-      <h3 id="contact-heading">Contact &amp; Socials</h3>
+  <section id="contact" aria-labelledby="contact-heading" class="container">
+    <h3 id="contact-heading">Contact &amp; Socials</h3>
 
-      <p>Have a question, collaboration, or feedback? Reach out below or connect on social media.</p>
+    <p>Have a question? Reach out below or connect on social media.</p>
 
-      <!-- Simple contact form (no backend) -->
-      <form id="contact-form" action="#" method="post" aria-label="Contact form">
-        <div>
-          <label for="name">Name</label><br />
-          <input type="text" id="name" name="name" required />
-        </div>
-
-        <div>
-          <label for="message">Message</label><br />
-          <textarea id="message" name="message" rows="5" required></textarea>
-        </div>
-
-        <div>
-          <button type="submit">Send message</button>
-        </div>
-      </form>
-
-      <div id="socials">
-        <h4>Socials</h4>
-        <ul>
-          <li><a href="#" aria-label="Instagram">Instagram</a></li>
-        </ul>
+    <form id="contact-form" action="#" method="post" aria-label="Contact form">
+      <div>
+        <label for="name">Name</label><br />
+        <input type="text" id="name" name="name" required />
       </div>
-    </section>
+
+      <div>
+        <label for="message">Message</label><br />
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+
+      <div>
+        <button type="submit">Send message</button>
+      </div>
+    </form>
+
+    <div id="socials">
+      <h4>Socials</h4>
+      <ul>
+        <li><a href="https://ph.pinterest.com/saekurahime/" aria-label="Pinterest">Pinterent</a></li>
+      </ul>
+    </div>
+  </section>
+
+</body>
+</html>

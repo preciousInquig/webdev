@@ -1,29 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">    
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-    <link rel="stylesheet" href="styles.css">
-</html>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | BloomStudy Hime</title>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fffafc;
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      background: linear-gradient(to bottom, #f6a5b1, #fce4ec);
+      color: white;
+      padding: 40px 0;
+      position: relative;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    header nav a {
+      color: white;
+      text-decoration: none;
+      margin-top: 10px;
+      display: inline-block;
+      font-weight: bold;
+    }
+
+    section#about {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    section#about h3 {
+      font-size: 1.8rem;
+      color: #d47c91;
+      margin-bottom: 20px;
+    }
+
+    #profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin: 20px auto;
+      display: block;
+      border: 4px solid #f6a5b1;
+      background: url('https://via.placeholder.com/150') center/cover no-repeat;
+    }
+
+    #short-bio h4, #why-started h4 {
+      color: #e08699;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    #short-bio p, #why-started p {
+      color: #555;
+      line-height: 1.6;
+      max-width: 650px;
+      margin: 0 auto 20px;
+    }
+
+    .download-btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background: #f6a5b1;
+      color: white;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 25px;
+    }
+
+    .download-btn:hover {
+      background: #e08699;
+    }
+  </style>
+</head>
+<body>
 
   <header>
-    <h1>HOME</h1>
-    <nav>
-      <a href="nav.html">navigation</a>
-    </nav>
+    <h1>BLOOMSTUDY HIME</h1>
   </header>
-  
-    <section id="home" aria-labelledby="home-heading">
-      <div class="hero container">
-        <h2 id="home-heading">Welcome to BloomStudy Hime</h2>
-        <p class="intro">
-          “Welcome to BloomStudy Hime—a cozy corner made for learners who want to study smarter, not harder.
-          This space is all about blending productivity with elegance, helping you sharpen your focus, manage your time,
-          and turn studying into a habit you actually enjoy.”
-        </p>
-        <p class="tagline">
-          <em>“BloomStudy Hime is your space to grow as a learner. Here, productivity meets elegance—discover strategies to sharpen your focus, manage your time, and let your study journey bloom beautifully.”</em>
-        </p>
+
+  <main>
+    <section id="about" aria-labelledby="about-heading" class="container">
+      <h3 id="about-heading">Home Page</h3>
+
+      <div id="BloomStudy Hime logo.png"></div> 
+
+      <div id="Introduction">
+        <h4>Introduction</h4>
+        <p>Welcome to BloomStudy Hime—a cozy corner made for learners who want to study smarter, not harder. 
+           This space is all about blending productivity with elegance, helping you sharpen your focus, manage your time, and turn studying into a habit you actually enjoy.”</p>
       </div>
+
+      <div id="Tagline">
+        <h4>Tagline</h4>
+        <p>BloomStudy Hime is your space to grow as a learner. Here, productivity meets elegance—discover 
+          strategies to sharpen your focus, manage your time, and let your study journey bloom beautifully”</p>
+      </div>
+
+      <div id="Features">
+        <h4>Features</h4>
+          <p>Study Skills and Productivity Tips</p>
+      </div>
+
+      <a href="navigation.html" class="download-btn">Go Back</a>
     </section>
+  </main>
+
+</body>
+</html>
