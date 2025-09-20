@@ -11,11 +11,13 @@
       font-family: Arial, sans-serif;
       display: flex;
       height: 100vh;
+      color: #333;
+      background: #fafafa;
     }
 
     .sidebar {
-      width: 220px;
-      background: #f6a5b1;
+      width: 240px;
+      background: linear-gradient(to bottom, #f9c5d1, #f6a5b1);
       padding: 20px;
       box-shadow: 2px 0 6px rgba(0,0,0,0.1);
       display: flex;
@@ -24,70 +26,96 @@
     }
 
     .sidebar h2 {
-      font-size: 1.2rem;
+      font-size: 1.4rem;
       margin-bottom: 20px;
-      color: #d6336c;
+      color: #7a003c;
+      text-align: center;
     }
 
     .sidebar ul {
       list-style: none;
       padding: 0;
+      margin: 0;
     }
 
     .sidebar ul li {
-      margin: 12px 0;
+      margin: 14px 0;
     }
 
     .sidebar ul li a {
       text-decoration: none;
-      color: #7e5050;
+      color: #4a2e2e;
       font-weight: 500;
+      transition: color 0.3s ease;
     }
 
     .sidebar ul li a:hover {
-      color: #a70f44;
+      color: #7a003c;
     }
 
     .social-links {
       margin-top: 20px;
+      text-align: center;
     }
 
     .social-links a {
-      margin-right: 10px;
+      margin: 0 8px;
       text-decoration: none;
-      font-size: 18px;
-      color: #7e5050;
+      font-size: 20px;
+      color: #7a003c;
     }
 
     .main-content {
       flex: 1;
+      display: flex;
+      flex-direction: column;
       padding: 30px;
-      background: #fafafa;
       overflow-y: auto;
     }
 
+    header {
+      background: linear-gradient(to right, #f9c5d1, #a18cd1);
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
     header h1 {
-      color: #a70f44;
+      margin: 0;
+      color: #7a003c;
     }
 
     nav ul {
       display: flex;
       gap: 20px;
+      justify-content: center;
       padding: 0;
+      margin: 10px 0 0;
       list-style: none;
     }
 
     nav ul li a {
       text-decoration: none;
-      color: #a70f44;
+      color: #fff;
       font-weight: bold;
     }
 
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    main h2 {
+      color: #7a003c;
+      margin-top: 0;
+    }
+
     footer {
-      margin-top: 40px;
+      margin-top: auto;
       text-align: center;
-      color: #e0c7c7;
+      color: #7a003c;
       font-size: 0.9rem;
+      padding: 15px 0;
     }
   </style>
 </head>
@@ -114,7 +142,7 @@
       <h1>Welcome to BloomStudy Hime</h1>
       <nav>
         <ul>
-          <li><a href="about.html">About</a>
+          <li><a href="about.html">About</a></li>
           <li><a href="home.html">Home</a></li>
           <li><a href="contact.html">Contact Us</a></li>
         </ul>
@@ -128,22 +156,6 @@
         <li>Productivity Tips</li>
         <li>Resources</li>
       </ul>
-
-      <p>
-        (DAY1) Hi this is Precious, for my first update I created the HTML structure for my website.<br>
-        Check it out here: 
-        <a href="https://docs.google.com/document/d/1CkJk6ihw7W12Odg4DwuAPsko84AbvvOoLiK7qiEw2O0/edit?usp=sharing" target="_blank">Study Guide</a>.
-      </p>
-
-      <p>
-        (DAY2) Today I finished writing the content in my docs file that I'm going to put in my website for all the 5 parts.
-        Also, I started working on the internal CSS of home, navigation, about, and contact pages.
-      </p>
-
-      <p>
-        (DAY3) I Started doing the html structure of my remaining 4 pages 
-        (study skills, productivity tips, tools and resources, lifestyle and balance, blog and articles).
-      </p>
     </main>
 
     <footer>
