@@ -1,16 +1,13 @@
-/* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;600&display=swap');
 
-/* General */
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  background: #fff0f5; /* light sakura pink */
+  background: #fff0f5;
   color: #4a2c2a;
 }
 
-/* Header */
 header {
   background: linear-gradient(135deg, #ffb7c5, #ffdce5);
   color: #4a2c2a;
@@ -27,7 +24,6 @@ header p {
   font-style: italic;
 }
 
-/* Navbar */
 nav {
   background: #f6a5b1;
   padding: 12px;
@@ -46,7 +42,6 @@ nav a:hover {
   color: #4a2c2a;
 }
 
-/* Hero Section */
 .hero {
   background: url('sakura.jpg') no-repeat center/cover;
   color: #fff;
@@ -63,18 +58,16 @@ nav a:hover {
   margin-top: 10px;
 }
 
-/* Sections */
 .section {
   padding: 50px 20px;
   text-align: center;
 }
 .section h2 {
-  color: #d6336c; /* deep sakura pink */
+  color: #d6336c;
   margin-bottom: 20px;
   font-family: 'Playfair Display', serif;
 }
 
-/* Menu Items */
 .menu-item {
   margin: 12px 0;
   background: #ffe4ec;
@@ -86,7 +79,6 @@ nav a:hover {
   box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
 }
 
-/* Contact Form */
 input, textarea {
   padding: 12px;
   margin: 8px;
@@ -113,7 +105,6 @@ button:hover {
   background: #b02555;
 }
 
-/* Footer */
 footer {
   background: #f6a5b1;
   color: white;

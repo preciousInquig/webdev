@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Two Column Layout</title>
+  <style>
+    body {
+      font-family: Helvetica, sans-serif;
+      margin: 20px;
+      background-color: #ffe4e9;
+      text-align: center;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .text, .image {
+      flex: 1;
+    }
+
+    .image img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    @media (min-width: 768px) {
+      .container {
+        flex-direction: row;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Two Column Layout</h1>
+  <div class="container">
+    <div class="text">
+      <h2>Responsive Design</h2>
+      <p>
+        Hi! this is an example of my flexible two-column layout. 
+        On smaller screens, the text and image are stacked vertically.
+        On wider screens, they are displayed side by side using Flexbox.
+
+        <br>
+        <br>                          ╱|、
+        <br>                   (˚ˎ 。7  
+        <br>                   |、˜〵          
+        <br>                   じしˍ,)ノ
+      </p>
+    </div>
+    <div class="image">
+      <img src="https://i.pinimg.com/736x/d2/96/dc/d296dc680acab490630dab36b6c9b433.jpg" alt="Sample Image">
+    </div>
+  </div>
+</body>
+</html>
