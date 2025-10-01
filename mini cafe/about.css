@@ -82,3 +82,25 @@ body {
   border-radius: 8px;
   display: block;
 }
+
+nav {
+  background: #f6a5b1;
+  padding: 12px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+nav a {
+  color: white;
+  margin: 0 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+nav a:hover {
+  color: #4a2c2a;
+}
+nav a.active {
+  text-decoration: underline;
+}
