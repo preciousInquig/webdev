@@ -101,6 +101,3 @@ nav a {
 nav a:hover {
   color: #4a2c2a;
 }
-nav a.active {
-  text-decoration: underline;
-}
