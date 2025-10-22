@@ -101,3 +101,35 @@ nav a {
 nav a:hover {
   color: #4a2c2a;
 }
+
+
+.custom-pink {
+  background: #ffb7c5;
+  color: #fff;
+}
+
+footer {
+  background: #ffe4ec;
+  padding: 18px 12px;
+  text-align: center;
+  color: #4a2c2a;
+  margin-top: 40px;
+  font-size: 0.95rem;
+  border-top: 1px solid rgba(74,44,42,0.06);
+}
+footer a {
+  color: #d6336c;
+  text-decoration: none;
+  font-weight: 600;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+img.img-fluid.rounded.shadow {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+  border-radius: 0.5rem;
+}
