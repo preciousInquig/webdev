@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+<body>
+  <h1 id="title">Welcome!</h1>
+  <button onclick="changeTitle()">Change Title</button>
+
+  <script>
+    function changeTitle() {
+      const el = document.getElementById('title');
+      if (el) el.innerText = 'Updated!';
+    }
+  </script>
+</body>
+</html>
