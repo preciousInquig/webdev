@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Color Changer</title></head>
+<body>
+  <label for="bg">Choose color:</label>
+  <select id="bg">
+    <option value="white">White</option>
+    <option value="#f9f1e7">Cream</option>
+    <option value="#e6f7ff">Light Blue</option>
+  </select>
+  <button id="chg">Change Background</button>
+
+  <script>
+    document.getElementById('chg').addEventListener('click', () => {
+      const val = document.getElementById('bg').value;
+      document.body.style.backgroundColor = val;
+    });
+  </script>
+</body>
+</html>
