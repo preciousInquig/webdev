@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Interactive Greeting Box</title>
+  <script>
+    let greetings = [
+      "Hello, student!", 
+      "keep coding, keep exploring!", 
+      "Welcome to Web Development!", 
+      "Have a great day!", 
+      "Youre doing awesome!"
+    ];
+
+    let colors = [
+      "#f49999", "#99f499", "#9999ff", "#ffcc99", "#cc99ff"
+    ];
+
+    let i = 0;
+
+    function changeGreeting() {
+      i = (i + 1) % greetings.length;
+      let box = document.getElementById("greet");
+      box.innerHTML = greetings[i];
+      box.style.color = colors[i];
+    }
+  </script>
+</head>
+<body style="text-align:center; margin-top:100px;">
+
+  <h2>Interactive Greeting Box</h2>
+
+  <div style="border:1px solid #ccc; padding:20px; display:inline-block; border-radius:10px;">
+    <p id="greet" style="font-size:20px; color:#333;">
+      Hello, student!
+    </p>
+    <button onclick="changeGreeting()" 
+      style="padding:8px 15px; background:#007bff; color:white; border:none; border-radius:5px;">
+      Change Greeting
+    </button>
+  </div>
+
+</body>
+</html>
