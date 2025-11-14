@@ -12,16 +12,18 @@
     ];
 
     let colors = [
-      "#f49999", "#99f499", "#9999ff", "#ffcc99", "#cc99ff"
+      "#FAF9EE", "#FEEBF6", "#FFF2EB", "#ECFAE5", "#F1E7E7"
     ];
 
     let i = 0;
 
     function changeGreeting() {
       i = (i + 1) % greetings.length;
-      let box = document.getElementById("greet");
-      box.innerHTML = greetings[i];
-      box.style.color = colors[i];
+
+      let text = document.getElementById("greet");
+      text.innerHTML = greetings[i];
+
+      document.body.style.backgroundColor = colors[i];
     }
   </script>
 </head>
@@ -29,8 +31,8 @@
 
   <h2>Interactive Greeting Box</h2>
 
-  <div style="border:1px solid #ccc; padding:20px; display:inline-block; border-radius:10px;">
-    <p id="greet" style="font-size:20px; color:#333;">
+  <div id="box" style="background:white; border:1px solid #ccc; padding:20px; display:inline-block; border-radius:10px;">
+    <p id="greet" style="font-size:20px; color:#333; padding:10px; border-radius:5px;">
       Hello, student!
     </p>
     <button onclick="changeGreeting()" 
