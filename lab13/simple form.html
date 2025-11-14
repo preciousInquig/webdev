@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Form</title>
+    <script>
+        function stopSubmit(event) {
+            event.preventDefault();
+            alert("Form submitted (but prevented for demo).");
+        }
+    </script>
+</head>
+<body>
+
+    <h2>Simple Form (with onsubmit)</h2>
+
+    <form onsubmit="stopSubmit(event)">
+        <label>First Name:</label><br>
+        <input type="text" name="fname"><br><br>
+
+        <label>Last Name:</label><br>
+        <input type="text" name="lname"><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" name="email"><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>

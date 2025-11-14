@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Array Activity</title>
+
+    <script>
+        // store contact data
+        let contacts = [];
+
+        function addContact(event) {
+            event.preventDefault(); // stop page reload
+
+            let name = document.getElementById("name").value.trim();
+            let message = document.getElementById("message").value.trim();
+
+            if (name === "" || message === "") {
+                alert("Please fill out all fields.");
+                return;
+            }
+
+            // Push contact into array
+            contacts.push({
+                name: name,
+                message: message
+            });
+
+            // Update display
+            displayContacts();
+
+            // Clear fields
+            document.getElementById("contactForm").reset();
+        }
+
+        function displayContacts() {
+            let output = document.getElementById("output");
+            output.innerHTML = ""; // clear display first
+
+            for (let i = 0; i < contacts.length; i++) {
+                output.innerHTML += `
+                    <p><strong>Name:</strong> ${contacts[i].name}<br>
+                    <strong>Message:</strong> ${contacts[i].message}</p>
+                    <hr>
+                `;
+            }
+        }
+    </script>
+
+</head>
+<body>
+
+    <h2>Contact Form (Array Storage)</h2>
+
+    <form id="contactForm" onsubmit="addContact(event)">
+        <label>Name:</label><br>
+        <input type="text" id="name"><br><br>
+
+        <label>Message:</label><br>
+        <textarea id="message"></textarea><br><br>
+
+        <button type="submit">Add Contact</button>
+    </form>
+
+    <h3>Saved Contacts:</h3>
+    <div id="output"></div>
+
+</body>
+</html>
